@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+<!-- google web font: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "nav") {
+        x.className += " responsive";
+        } else {
+        x.className = "nav";
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="logo">
+        	<a href="index.html"><img src="images/logo.jpg" alt="Logo"></a>
+        </div>
+        
+        <nav class="nav" id="myTopnav">
+              <a href="index.html">Home</a>
+              <a href="#">Things to do</a>
+              <a href="#">Hotels</a>
+              <a href="#">Information</a>
+              <a href="contactUs.html">Contact Us</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i></a>
+        </nav>
+        
+        <div class="containerForm">
+            <fieldset class="outerFieldset">
+            <legend>Newsletter</legend>
+            <form action="http://litstudentprojects.net/rdwd-newsletter-response.php" method="post">
+                <br>
+                <label  class="fName" for="fname">First name:* 
+                    <input class="fNameIn" type="text" name="first_name" id="fname" required></label>
+				<label class="sName" for="sname">Last name:* 
+                    <input class="sNameIn" type="text" name="last_name" id="sname" required></label>
+				<label class="email1" for="email1">Email:* 
+                    <input class="email1In" type="email" name="email1" id="email1" required></label>
+				<label class="email2" for="email2">Retype your email:*
+                    <input class="email2In" type="text" name="email2" id="email2" required></label>
+				<label class="phone" for="phone">Phone: 
+                    <input class="phoneIn" type="tel" name="phone" id="phone"></label>
+                
+                <fieldset class="innerFieldset">
+                    <legend class="interests">Your interests? (tick all that apply)</legend>
+                    <br>
+                    <input type="checkbox" id="todo" name="interest[]" value="todo">
+                    <label for="todo"> Things to do</label><br>
+                        
+                        <input type="checkbox" id="hiking" name="interest[]" value="hiking">
+                        <label for="hiking"> Hiking and Walking</label><br>
+                        
+                        <input type="checkbox" id="events" name="interest[]" value="events">
+                        <label for="events"> Events</label><br>
+                        
+                        <input type="checkbox" id="accommodation" name="interest[]" value="accommodation">
+                        <label for="accommodation"> Places to Stay</label><br>
+                        
+                        <input type="checkbox" id="dining" name="interest[]" value="dining">
+                        <label for="dining"> Places to Eat</label><br>
+                </fieldset>
+            <input class="button" type="submit" value="GO">
+		</form>
+                <p>*required field</p>
+            </fieldset>
+        </div>
+    </div>
+            
+    <!--footer -->
+    <footer class="footerContainer">
+        <div class="footer1">
+            <img id="footerImg" src="images/footerImg.png" alt="logo">
+        </div>
+        <div class="footer2">
+            <ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="#">Things to do</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <ul>
+				<li><a href="https://visitkrakow.com/first-time-in-krakow/" >First Time In Krakow</a></li>
+				<li><a href="https://visitkrakow.com/things-to-do-in-krakow/" >Things To Do In Krakow</a></li>
+                <li><a href="https://visitkrakow.com/krakow-food-tours/" >Krakow Food Tours</a></li>
+				<li><a href="https://visitkrakow.com/krakow-walking-tours/" >Krakow Walking Tours</a></li>
+                <li><a href="https://visitkrakow.com/krakow-river-cruises/" >Kraków River Cruises</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
